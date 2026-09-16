@@ -1,0 +1,133 @@
+# MASVS automation coverage, machine-readable form.
+# Control ids and statements: OWASP MASVS v2.1.0, CC BY-SA 4.0, OWASP Foundation.
+# The automation and method fields are our own assessment.
+standard: OWASP MASVS
+version: 2.1.0
+source: https://github.com/OWASP/owasp-masvs
+licence: CC-BY-SA-4.0
+summary:
+  automated: 6
+  partial: 12
+  manual: 6
+  total: 24
+controls:
+  - id: MASVS-STORAGE-1
+    group: MASVS-STORAGE
+    statement: "The app securely stores sensitive data."
+    automation: partial
+    method: "Manifest and plist review, keystore and keychain usage, app sandbox dump on a device we own."
+  - id: MASVS-STORAGE-2
+    group: MASVS-STORAGE
+    statement: "The app prevents leakage of sensitive data."
+    automation: partial
+    method: "Log capture during a scripted walkthrough, backup flags, cache and snapshot review."
+  - id: MASVS-CRYPTO-1
+    group: MASVS-CRYPTO
+    statement: "The app employs current strong cryptography and uses it according to industry best practices."
+    automation: automated
+    method: "Static rules for ECB mode, MD5 and SHA-1 used for security, predictable randomness, static IVs."
+  - id: MASVS-CRYPTO-2
+    group: MASVS-CRYPTO
+    statement: "The app performs key management according to industry best practices."
+    automation: partial
+    method: "Hardcoded key and secret scanning, then manual review of the key lifecycle."
+  - id: MASVS-AUTH-1
+    group: MASVS-AUTH
+    statement: "The app uses secure authentication and authorization protocols and follows the relevant best practices."
+    automation: manual
+    method: "Manual review of the token flow against endpoints you have authorised in writing."
+  - id: MASVS-AUTH-2
+    group: MASVS-AUTH
+    statement: "The app performs local authentication securely according to the platform best practices."
+    automation: partial
+    method: "Static check of the biometric API and its crypto binding, then manual confirmation."
+  - id: MASVS-AUTH-3
+    group: MASVS-AUTH
+    statement: "The app secures sensitive operations with additional authentication."
+    automation: manual
+    method: "Manual: does a high value action trigger step-up authentication."
+  - id: MASVS-NETWORK-1
+    group: MASVS-NETWORK
+    statement: "The app secures all network traffic according to the current best practices."
+    automation: automated
+    method: "Cleartext flags, network security config, iOS ATS exceptions, observed TLS version."
+  - id: MASVS-NETWORK-2
+    group: MASVS-NETWORK
+    statement: "The app performs identity pinning for all remote endpoints under the developer's control."
+    automation: partial
+    method: "Static detection of the pinning implementation, dynamic bypass attempt to test quality."
+  - id: MASVS-PLATFORM-1
+    group: MASVS-PLATFORM
+    statement: "The app uses IPC mechanisms securely."
+    automation: automated
+    method: "Exported components, permission guards, PendingIntent mutability, URI permission grants."
+  - id: MASVS-PLATFORM-2
+    group: MASVS-PLATFORM
+    statement: "The app uses WebViews securely."
+    automation: automated
+    method: "WebView JavaScript bridges, file access settings, legacy web view classes."
+  - id: MASVS-PLATFORM-3
+    group: MASVS-PLATFORM
+    statement: "The app uses the user interface securely."
+    automation: partial
+    method: "Secure flag and input types statically, screenshot, clipboard and notification leakage on device."
+  - id: MASVS-CODE-1
+    group: MASVS-CODE
+    statement: "The app requires an up-to-date platform version."
+    automation: automated
+    method: "Minimum and target SDK, iOS deployment target."
+  - id: MASVS-CODE-2
+    group: MASVS-CODE
+    statement: "The app has a mechanism for enforcing app updates."
+    automation: manual
+    method: "Manual: is there a working forced upgrade or remote version gate."
+  - id: MASVS-CODE-3
+    group: MASVS-CODE
+    statement: "The app only uses software components without known vulnerabilities."
+    automation: automated
+    method: "Dependency and SBOM scan against known vulnerability databases."
+  - id: MASVS-CODE-4
+    group: MASVS-CODE
+    statement: "The app validates and sanitizes all untrusted inputs."
+    automation: partial
+    method: "Static injection sink detection, then manual confirmation that the sink is reachable."
+  - id: MASVS-RESILIENCE-1
+    group: MASVS-RESILIENCE
+    statement: "The app validates the integrity of the platform."
+    automation: partial
+    method: "Detect the integrity and attestation mechanism, then assess whether it is real or decorative."
+  - id: MASVS-RESILIENCE-2
+    group: MASVS-RESILIENCE
+    statement: "The app implements anti-tampering mechanisms."
+    automation: partial
+    method: "Signature and checksum verification logic, manual assessment of strength."
+  - id: MASVS-RESILIENCE-3
+    group: MASVS-RESILIENCE
+    statement: "The app implements anti-static analysis mechanisms."
+    automation: partial
+    method: "Decompile readability, obfuscation state, and whether a mapping file shipped in the artifact."
+  - id: MASVS-RESILIENCE-4
+    group: MASVS-RESILIENCE
+    statement: "The app implements anti-dynamic analysis techniques."
+    automation: manual
+    method: "Manual anti-debug and anti-instrumentation testing on a device we own."
+  - id: MASVS-PRIVACY-1
+    group: MASVS-PRIVACY
+    statement: "The app minimizes access to sensitive data and resources."
+    automation: partial
+    method: "Declared permissions against observed usage, third-party SDK and tracker inventory."
+  - id: MASVS-PRIVACY-2
+    group: MASVS-PRIVACY
+    statement: "The app prevents identification of the user."
+    automation: partial
+    method: "Identifier usage and device fingerprinting fields in traffic."
+  - id: MASVS-PRIVACY-3
+    group: MASVS-PRIVACY
+    statement: "The app is transparent about data collection and usage."
+    automation: manual
+    method: "Privacy policy and store data safety declaration against observed traffic. The gap is the finding."
+  - id: MASVS-PRIVACY-4
+    group: MASVS-PRIVACY
+    statement: "The app offers user control over their data."
+    automation: manual
+    method: "Functional review of deletion, export and consent withdrawal."
