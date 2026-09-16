@@ -21,6 +21,22 @@ MAS testing profiles: MAS-L1, MAS-L2, MAS-R, and MAS-P since v2.1.0. Anyone stil
 6 of 24. That is the honest ceiling for a fully automated mobile scan today. Any product
 that claims full MASVS coverage without an analyst is counting controls it did not test.
 
+## By group
+
+| Group | Controls | Automated | Partial | Manual |
+|---|---|---|---|---|
+| MASVS-STORAGE - Storage | 2 | 0 | 2 | 0 |
+| MASVS-CRYPTO - Cryptography | 2 | 1 | 1 | 0 |
+| MASVS-AUTH - Authentication and Authorization | 3 | 0 | 1 | 2 |
+| MASVS-NETWORK - Network Communication | 2 | 1 | 1 | 0 |
+| MASVS-PLATFORM - Platform Interaction | 3 | 2 | 1 | 0 |
+| MASVS-CODE - Code Quality | 4 | 2 | 1 | 1 |
+| MASVS-RESILIENCE - Resilience Against Reverse Engineering and Tampering | 4 | 0 | 3 | 1 |
+| MASVS-PRIVACY - Privacy | 4 | 0 | 2 | 2 |
+
+The two groups that most often decide whether an assessment was real, RESILIENCE and PRIVACY,
+are also the two with no fully automated control between them.
+
 ## The controls
 
 | Control | Statement | Automation | How it is verified |
@@ -50,10 +66,27 @@ that claims full MASVS coverage without an analyst is counting controls it did n
 | `MASVS-PRIVACY-3` | The app is transparent about data collection and usage. | Manual | Privacy policy and store data safety declaration against observed traffic. The gap is the finding. |
 | `MASVS-PRIVACY-4` | The app offers user control over their data. | Manual | Functional review of deletion, export and consent withdrawal |
 
-## Source
+## Questions worth asking any vendor
+
+Whoever you buy a mobile assessment from, including us:
+
+1. Which of these 24 controls did you test, and which did you skip? A report with 24 passes
+   and no gaps is a report that did not look.
+2. For every control you marked as passing, what evidence can you show me?
+3. Is this an assessment or a penetration test? Those are different products at different prices.
+4. When your tooling fails to parse something, does the report say NOT_TESTED, or does it
+   quietly show a pass? Silence must never look like a pass.
+
+## Data
+
+[`coverage.yaml`](coverage.yaml) holds the same table in machine-readable form, if you want to
+diff it against your own coverage or feed it to a tool.
+
+## Source and licence
 
 Control IDs and statements are taken verbatim from
-[OWASP/owasp-masvs](https://github.com/OWASP/owasp-masvs) v2.1.0. The automation column is our
-own assessment and is open to argument. Open an issue if you disagree with a row.
+[OWASP/owasp-masvs](https://github.com/OWASP/owasp-masvs) v2.1.0, licensed CC BY-SA 4.0 by the
+OWASP Foundation. The automation column and the verification notes are our own assessment and
+are open to argument. Open an issue if you disagree with a row.
 
-MASVS is licensed CC BY-SA 4.0 by the OWASP Foundation.
+This repository is published under the same licence, [CC BY-SA 4.0](LICENSE).
