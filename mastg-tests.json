@@ -1,0 +1,571 @@
+{
+  "source": {
+    "mastg": "v2.0.0",
+    "maswe": "v1.0.0"
+  },
+  "unmapped": [
+    "MASTG-TEST-0240",
+    "MASTG-TEST-0241",
+    "MASTG-TEST-0324",
+    "MASTG-TEST-0325"
+  ],
+  "controls": {
+    "MASVS-AUTH-1": {
+      "tests": 6,
+      "static": 0,
+      "dynamic": 0,
+      "manual": 6,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0355",
+        "MASTG-TEST-0356",
+        "MASTG-TEST-0357",
+        "MASTG-TEST-0364",
+        "MASTG-TEST-0365",
+        "MASTG-TEST-0366"
+      ]
+    },
+    "MASVS-AUTH-2": {
+      "tests": 11,
+      "static": 8,
+      "dynamic": 3,
+      "manual": 0,
+      "profiles": [
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0266",
+        "MASTG-TEST-0267",
+        "MASTG-TEST-0268",
+        "MASTG-TEST-0269",
+        "MASTG-TEST-0270",
+        "MASTG-TEST-0271",
+        "MASTG-TEST-0326",
+        "MASTG-TEST-0327",
+        "MASTG-TEST-0328",
+        "MASTG-TEST-0329",
+        "MASTG-TEST-0330"
+      ]
+    },
+    "MASVS-CODE-1": {
+      "tests": 1,
+      "static": 1,
+      "dynamic": 0,
+      "manual": 0,
+      "profiles": [
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0245"
+      ]
+    },
+    "MASVS-CODE-2": {
+      "tests": 4,
+      "static": 0,
+      "dynamic": 0,
+      "manual": 4,
+      "profiles": [
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0382",
+        "MASTG-TEST-0383",
+        "MASTG-TEST-0384",
+        "MASTG-TEST-0392"
+      ]
+    },
+    "MASVS-CODE-3": {
+      "tests": 9,
+      "static": 9,
+      "dynamic": 0,
+      "manual": 0,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0222",
+        "MASTG-TEST-0223",
+        "MASTG-TEST-0228",
+        "MASTG-TEST-0229",
+        "MASTG-TEST-0230",
+        "MASTG-TEST-0272",
+        "MASTG-TEST-0273",
+        "MASTG-TEST-0274",
+        "MASTG-TEST-0275"
+      ]
+    },
+    "MASVS-CODE-4": {
+      "tests": 34,
+      "static": 16,
+      "dynamic": 0,
+      "manual": 18,
+      "profiles": [
+        "L1",
+        "L2",
+        "P",
+        "R"
+      ],
+      "ids": [
+        "MASTG-TEST-0222",
+        "MASTG-TEST-0223",
+        "MASTG-TEST-0228",
+        "MASTG-TEST-0229",
+        "MASTG-TEST-0230",
+        "MASTG-TEST-0250",
+        "MASTG-TEST-0251",
+        "MASTG-TEST-0252",
+        "MASTG-TEST-0253",
+        "MASTG-TEST-0331",
+        "MASTG-TEST-0332",
+        "MASTG-TEST-0333",
+        "MASTG-TEST-0334",
+        "MASTG-TEST-0335",
+        "MASTG-TEST-0336",
+        "MASTG-TEST-0337",
+        "MASTG-TEST-0338",
+        "MASTG-TEST-0339",
+        "MASTG-TEST-0370",
+        "MASTG-TEST-0371",
+        "MASTG-TEST-0375",
+        "MASTG-TEST-0376",
+        "MASTG-TEST-0377",
+        "MASTG-TEST-0378",
+        "MASTG-TEST-0379",
+        "MASTG-TEST-0380",
+        "MASTG-TEST-0386",
+        "MASTG-TEST-0387",
+        "MASTG-TEST-0393",
+        "MASTG-TEST-0394",
+        "MASTG-TEST-0395",
+        "MASTG-TEST-0398",
+        "MASTG-TEST-0399",
+        "MASTG-TEST-0400"
+      ]
+    },
+    "MASVS-CRYPTO-1": {
+      "tests": 13,
+      "static": 2,
+      "dynamic": 1,
+      "manual": 10,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0204",
+        "MASTG-TEST-0205",
+        "MASTG-TEST-0210",
+        "MASTG-TEST-0211",
+        "MASTG-TEST-0221",
+        "MASTG-TEST-0232",
+        "MASTG-TEST-0307",
+        "MASTG-TEST-0308",
+        "MASTG-TEST-0311",
+        "MASTG-TEST-0312",
+        "MASTG-TEST-0317",
+        "MASTG-TEST-0349",
+        "MASTG-TEST-0350"
+      ]
+    },
+    "MASVS-CRYPTO-2": {
+      "tests": 33,
+      "static": 14,
+      "dynamic": 10,
+      "manual": 9,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0207",
+        "MASTG-TEST-0208",
+        "MASTG-TEST-0209",
+        "MASTG-TEST-0210",
+        "MASTG-TEST-0212",
+        "MASTG-TEST-0213",
+        "MASTG-TEST-0214",
+        "MASTG-TEST-0221",
+        "MASTG-TEST-0232",
+        "MASTG-TEST-0246",
+        "MASTG-TEST-0247",
+        "MASTG-TEST-0248",
+        "MASTG-TEST-0249",
+        "MASTG-TEST-0266",
+        "MASTG-TEST-0267",
+        "MASTG-TEST-0270",
+        "MASTG-TEST-0271",
+        "MASTG-TEST-0287",
+        "MASTG-TEST-0299",
+        "MASTG-TEST-0300",
+        "MASTG-TEST-0301",
+        "MASTG-TEST-0302",
+        "MASTG-TEST-0307",
+        "MASTG-TEST-0308",
+        "MASTG-TEST-0312",
+        "MASTG-TEST-0317",
+        "MASTG-TEST-0320",
+        "MASTG-TEST-0327",
+        "MASTG-TEST-0328",
+        "MASTG-TEST-0329",
+        "MASTG-TEST-0330",
+        "MASTG-TEST-0350",
+        "MASTG-TEST-0388"
+      ]
+    },
+    "MASVS-NETWORK-1": {
+      "tests": 22,
+      "static": 9,
+      "dynamic": 3,
+      "manual": 10,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0217",
+        "MASTG-TEST-0218",
+        "MASTG-TEST-0233",
+        "MASTG-TEST-0234",
+        "MASTG-TEST-0235",
+        "MASTG-TEST-0236",
+        "MASTG-TEST-0282",
+        "MASTG-TEST-0283",
+        "MASTG-TEST-0284",
+        "MASTG-TEST-0285",
+        "MASTG-TEST-0286",
+        "MASTG-TEST-0295",
+        "MASTG-TEST-0321",
+        "MASTG-TEST-0322",
+        "MASTG-TEST-0323",
+        "MASTG-TEST-0342",
+        "MASTG-TEST-0343",
+        "MASTG-TEST-0344",
+        "MASTG-TEST-0345",
+        "MASTG-TEST-0348",
+        "MASTG-TEST-0396",
+        "MASTG-TEST-0397"
+      ]
+    },
+    "MASVS-NETWORK-2": {
+      "tests": 4,
+      "static": 3,
+      "dynamic": 1,
+      "manual": 0,
+      "profiles": [
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0242",
+        "MASTG-TEST-0243",
+        "MASTG-TEST-0244",
+        "MASTG-TEST-0385"
+      ]
+    },
+    "MASVS-PLATFORM-1": {
+      "tests": 16,
+      "static": 4,
+      "dynamic": 0,
+      "manual": 12,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0355",
+        "MASTG-TEST-0356",
+        "MASTG-TEST-0357",
+        "MASTG-TEST-0364",
+        "MASTG-TEST-0365",
+        "MASTG-TEST-0366",
+        "MASTG-TEST-0370",
+        "MASTG-TEST-0371",
+        "MASTG-TEST-0372",
+        "MASTG-TEST-0374",
+        "MASTG-TEST-0381",
+        "MASTG-TEST-0389",
+        "MASTG-TEST-0390",
+        "MASTG-TEST-0393",
+        "MASTG-TEST-0394",
+        "MASTG-TEST-0395"
+      ]
+    },
+    "MASVS-PLATFORM-2": {
+      "tests": 21,
+      "static": 9,
+      "dynamic": 0,
+      "manual": 12,
+      "profiles": [
+        "L1",
+        "L2",
+        "P",
+        "R"
+      ],
+      "ids": [
+        "MASTG-TEST-0226",
+        "MASTG-TEST-0227",
+        "MASTG-TEST-0250",
+        "MASTG-TEST-0251",
+        "MASTG-TEST-0252",
+        "MASTG-TEST-0253",
+        "MASTG-TEST-0261",
+        "MASTG-TEST-0331",
+        "MASTG-TEST-0332",
+        "MASTG-TEST-0333",
+        "MASTG-TEST-0334",
+        "MASTG-TEST-0335",
+        "MASTG-TEST-0336",
+        "MASTG-TEST-0376",
+        "MASTG-TEST-0377",
+        "MASTG-TEST-0378",
+        "MASTG-TEST-0379",
+        "MASTG-TEST-0380",
+        "MASTG-TEST-0398",
+        "MASTG-TEST-0399",
+        "MASTG-TEST-0400"
+      ]
+    },
+    "MASVS-PLATFORM-3": {
+      "tests": 16,
+      "static": 7,
+      "dynamic": 4,
+      "manual": 5,
+      "profiles": [
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0258",
+        "MASTG-TEST-0276",
+        "MASTG-TEST-0277",
+        "MASTG-TEST-0278",
+        "MASTG-TEST-0279",
+        "MASTG-TEST-0280",
+        "MASTG-TEST-0289",
+        "MASTG-TEST-0290",
+        "MASTG-TEST-0291",
+        "MASTG-TEST-0313",
+        "MASTG-TEST-0314",
+        "MASTG-TEST-0315",
+        "MASTG-TEST-0316",
+        "MASTG-TEST-0340",
+        "MASTG-TEST-0346",
+        "MASTG-TEST-0347"
+      ]
+    },
+    "MASVS-PRIVACY-1": {
+      "tests": 9,
+      "static": 2,
+      "dynamic": 3,
+      "manual": 4,
+      "profiles": [
+        "P"
+      ],
+      "ids": [
+        "MASTG-TEST-0206",
+        "MASTG-TEST-0254",
+        "MASTG-TEST-0281",
+        "MASTG-TEST-0318",
+        "MASTG-TEST-0319",
+        "MASTG-TEST-0360",
+        "MASTG-TEST-0361",
+        "MASTG-TEST-0362",
+        "MASTG-TEST-0363"
+      ]
+    },
+    "MASVS-PRIVACY-3": {
+      "tests": 4,
+      "static": 1,
+      "dynamic": 3,
+      "manual": 0,
+      "profiles": [
+        "P"
+      ],
+      "ids": [
+        "MASTG-TEST-0206",
+        "MASTG-TEST-0281",
+        "MASTG-TEST-0318",
+        "MASTG-TEST-0319"
+      ]
+    },
+    "MASVS-RESILIENCE-1": {
+      "tests": 2,
+      "static": 0,
+      "dynamic": 2,
+      "manual": 0,
+      "profiles": [
+        "R"
+      ],
+      "ids": [
+        "MASTG-TEST-0351",
+        "MASTG-TEST-0367"
+      ]
+    },
+    "MASVS-RESILIENCE-2": {
+      "tests": 7,
+      "static": 3,
+      "dynamic": 2,
+      "manual": 2,
+      "profiles": [
+        "R"
+      ],
+      "ids": [
+        "MASTG-TEST-0220",
+        "MASTG-TEST-0224",
+        "MASTG-TEST-0225",
+        "MASTG-TEST-0338",
+        "MASTG-TEST-0341",
+        "MASTG-TEST-0354",
+        "MASTG-TEST-0387"
+      ]
+    },
+    "MASVS-RESILIENCE-3": {
+      "tests": 10,
+      "static": 4,
+      "dynamic": 3,
+      "manual": 3,
+      "profiles": [
+        "R"
+      ],
+      "ids": [
+        "MASTG-TEST-0219",
+        "MASTG-TEST-0263",
+        "MASTG-TEST-0264",
+        "MASTG-TEST-0265",
+        "MASTG-TEST-0288",
+        "MASTG-TEST-0358",
+        "MASTG-TEST-0359",
+        "MASTG-TEST-0368",
+        "MASTG-TEST-0369",
+        "MASTG-TEST-0391"
+      ]
+    },
+    "MASVS-RESILIENCE-4": {
+      "tests": 9,
+      "static": 3,
+      "dynamic": 2,
+      "manual": 4,
+      "profiles": [
+        "R"
+      ],
+      "ids": [
+        "MASTG-TEST-0226",
+        "MASTG-TEST-0227",
+        "MASTG-TEST-0261",
+        "MASTG-TEST-0351",
+        "MASTG-TEST-0352",
+        "MASTG-TEST-0353",
+        "MASTG-TEST-0367",
+        "MASTG-TEST-0401",
+        "MASTG-TEST-0402"
+      ]
+    },
+    "MASVS-STORAGE-1": {
+      "tests": 15,
+      "static": 3,
+      "dynamic": 5,
+      "manual": 7,
+      "profiles": [
+        "L1",
+        "L2"
+      ],
+      "ids": [
+        "MASTG-TEST-0200",
+        "MASTG-TEST-0201",
+        "MASTG-TEST-0202",
+        "MASTG-TEST-0207",
+        "MASTG-TEST-0212",
+        "MASTG-TEST-0213",
+        "MASTG-TEST-0214",
+        "MASTG-TEST-0287",
+        "MASTG-TEST-0299",
+        "MASTG-TEST-0300",
+        "MASTG-TEST-0301",
+        "MASTG-TEST-0302",
+        "MASTG-TEST-0303",
+        "MASTG-TEST-0320",
+        "MASTG-TEST-0388"
+      ]
+    },
+    "MASVS-STORAGE-2": {
+      "tests": 65,
+      "static": 21,
+      "dynamic": 13,
+      "manual": 31,
+      "profiles": [
+        "L1",
+        "L2",
+        "P"
+      ],
+      "ids": [
+        "MASTG-TEST-0200",
+        "MASTG-TEST-0201",
+        "MASTG-TEST-0202",
+        "MASTG-TEST-0203",
+        "MASTG-TEST-0207",
+        "MASTG-TEST-0215",
+        "MASTG-TEST-0216",
+        "MASTG-TEST-0231",
+        "MASTG-TEST-0250",
+        "MASTG-TEST-0251",
+        "MASTG-TEST-0252",
+        "MASTG-TEST-0253",
+        "MASTG-TEST-0258",
+        "MASTG-TEST-0262",
+        "MASTG-TEST-0276",
+        "MASTG-TEST-0277",
+        "MASTG-TEST-0278",
+        "MASTG-TEST-0279",
+        "MASTG-TEST-0280",
+        "MASTG-TEST-0287",
+        "MASTG-TEST-0289",
+        "MASTG-TEST-0290",
+        "MASTG-TEST-0291",
+        "MASTG-TEST-0296",
+        "MASTG-TEST-0297",
+        "MASTG-TEST-0298",
+        "MASTG-TEST-0299",
+        "MASTG-TEST-0300",
+        "MASTG-TEST-0301",
+        "MASTG-TEST-0302",
+        "MASTG-TEST-0303",
+        "MASTG-TEST-0313",
+        "MASTG-TEST-0314",
+        "MASTG-TEST-0315",
+        "MASTG-TEST-0316",
+        "MASTG-TEST-0320",
+        "MASTG-TEST-0333",
+        "MASTG-TEST-0334",
+        "MASTG-TEST-0335",
+        "MASTG-TEST-0336",
+        "MASTG-TEST-0340",
+        "MASTG-TEST-0346",
+        "MASTG-TEST-0347",
+        "MASTG-TEST-0355",
+        "MASTG-TEST-0356",
+        "MASTG-TEST-0357",
+        "MASTG-TEST-0364",
+        "MASTG-TEST-0365",
+        "MASTG-TEST-0366",
+        "MASTG-TEST-0370",
+        "MASTG-TEST-0371",
+        "MASTG-TEST-0372",
+        "MASTG-TEST-0374",
+        "MASTG-TEST-0376",
+        "MASTG-TEST-0377",
+        "MASTG-TEST-0378",
+        "MASTG-TEST-0379",
+        "MASTG-TEST-0380",
+        "MASTG-TEST-0381",
+        "MASTG-TEST-0388",
+        "MASTG-TEST-0389",
+        "MASTG-TEST-0390",
+        "MASTG-TEST-0393",
+        "MASTG-TEST-0394",
+        "MASTG-TEST-0395"
+      ]
+    }
+  }
+}
